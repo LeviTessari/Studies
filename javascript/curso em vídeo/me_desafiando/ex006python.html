@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicação</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        input{
+            font: normal 18pt Arial;
+        }
+        div#res{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício Python 006</h1>
+    <p>Crie um algoritmo que leia um número e mostre o seu dobro, triplo e raiz quadrada.</p>
+    <input type="number" name="numero" id="txtnumero">
+    <input type="button" value="Calcular" onclick="calcular()">
+    <div id="res">Resultado</div>
+    <script>
+        function calcular() {
+            let n1 = window.document.getElementById('txtnumero')
+            let n2 = Number.parseInt(n1.value)
+            let n3 = 2*n2
+            let n4 = 3*n2
+            let n5 = (n2)**(1/2)
+            res.innerHTML = `<pre>
+            O número escolhido foi <strong>${n2}</strong>.
+            O seu dobro é ${n3}.
+            O seu triplo é ${n4}.
+            Sua raiz quadrada é ${n5}
+            </pre>`
+
+        }
+    </script>
+</body>
+</html>

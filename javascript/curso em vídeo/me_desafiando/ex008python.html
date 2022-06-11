@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <style>
+        body{
+            font: normal 18px Arial;
+
+        }
+        input{
+            font: normal 18px Arial;
+        }
+        div#msg{
+            font: normal 18px Arial;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício Python 8</h1>
+    <p>Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros.</p>
+    <input type="number" name="valor" id="txtvalor">
+    <input type="button" value="Converter" onclick="converter()">
+    <div id="msg">Resultado</div>
+    <script>
+        function converter(){
+        let valor = window.document.getElementById('txtvalor')
+        let valor_uso = Number.parseFloat(valor.value)
+        let valor_cm = valor_uso*100
+        let valor_mi = valor_uso*1000
+        msg.innerHTML= `O valor de ${valor_uso} m, podemos converter em: ${valor_cm} cm ou em ${valor_mi} mm.`
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        body{
+            font: normal 18px Arial;
+        }
+        div#msg{
+            margin-top: 20px;
+
+        }
+        input{
+            font: normal 18px Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Exercício Python 9</h1>
+    <p>Faça um programa que leia um número Inteiro qualquer e mostre na tela a sua tabuada.</p>
+    <input type="number" name="numero" id="txtn">
+    <input type="button" value="tabuada" onclick="tabuada()">
+    <div id="msg">Resultado</div>
+<script>
+    function tabuada(){
+    let valor = window.document.getElementById('txtn')
+    let valor_real = Number.parseInt(valor.value)
+    let n2 = 2*valor_real
+    let n3 = 3*valor_real
+    let n4 = 4*valor_real
+    let n5 = 5*valor_real
+    let n6 = 6*valor_real
+    let n7 = 7*valor_real
+    let n8 = 8*valor_real
+    let n9 = 9*valor_real
+    let n10 = 10*valor_real
+    msg.innerHTML = `<pre>
+    O número escolhido foi: ${valor_real}
+    1 x ${valor_real} = ${valor_real}
+    2  x ${valor_real} = ${n2}
+    3  x ${valor_real} = ${n3}
+    4  x ${valor_real} = ${n4}
+    5  x ${valor_real} = ${n5}
+    6  x ${valor_real} = ${n6}
+    7  x ${valor_real} = ${n7}
+    8  x ${valor_real} = ${n8}
+    9  x ${valor_real} = ${n9}
+    10 x ${valor_real} = ${n10}
+    </pre>`}
+</script>
+</body>
+</html>

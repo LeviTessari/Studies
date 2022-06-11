@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Goescat-Macaron-Inkscape.ico" type="image/x-icon">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body{
+            background-color: rgb(27, 7, 12);
+            color: rgb(155, 115, 56);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição !</p>
+    <script>
+        var n1 = Number.parseFloat(window.prompt('Digite um número: ')); //prompt ele sempre é string, sempre recebe como string
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: '));//Usar o Number.parseInt para inteiros ou Number.parseFloat para numeros flutuantes, podemos também usar apenas Number()
+        var s = n1 + n2;
+        window.alert('A soma dos valores é ' + s)//Mais tem efeito de concatenação
+        window.alert(`A somados numeros ${n1} e ${n2} é ${s}`)
+        // + para adiação ou concatenação
+        // adiação = number + number
+        // string + string = concatenação
+        //prompt recebe obrigatoriamente como string
+        // Se você quer passa de Number -> String => String(n)
+        // ou numero.toString()
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        input{
+            font: normal 18pt Arial;
+        }
+        div#msg{
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p>Digite o pais onde você nasceu (sigla): <input type="text" name="txtnome" id="txtnormal">  <input type="button" value="nacionalidade" onclick="nacionalidade()"></p>
+    <div id="msg"></div>
+    <script>
+        function nacionalidade(){
+            let pais = window.document.getElementById('txtnormal').value.toLowerCase()
+            let br = 'brasil'    
+        if ( pais == br) {
+            msg.innerHTML = `<p>Você é <strong>brasileiro</strong>!</p>`
+        } else {
+            msg.innerHTML = `<p> Você é <strong>estrangeiro</strong>!</p>`}
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Goescat-Macaron-Inkscape.ico" type="image/x-icon">
+    <title>Testar</title>
+</head>
+<body>
+    <h1>Extras</h1>
+    <h2>Imagem fléxivel</h2>
+    <p>Colocar a imagem flexivel, para isso usamos alguns comandos</p>
+    <code><pre>
+        &lt;picture&gt;
+        &lt;source media="(max-width: tamanho px)" srcset="local onde esta imagem" type="tipo dela" &gt;
+        &lt;img&gt; src='local da imagem maior' alt='nome'&lt;/img&gt;
+        &lt;/picture&gt;
+    </pre></code>
+    <p>É aconselhavel a utilização de 750px, 1050px, assim poderemos ter uma imagem que se redimenciona com tamanho da janela</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagem/foto-g.png" alt="Flexivel">
+    </picture>
+    <h2>Audios</h2>
+
+    <audio preload="metadata" controls autoplay loop> 
+        <source src="audio/happy-mistake.mp3" type="audio/mpeg">
+        <p>Seu navegador não suporta áudio <a href="audio/guanacast-33.mp3" download="podecast.mp3" type="audio/mpeg"></a></p>
+    </audio>
+</body>
+</html>

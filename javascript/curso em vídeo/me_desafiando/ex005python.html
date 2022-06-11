@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        input{
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#res{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício Python 5</h1>
+    <p>Faça um programa que leia um número Inteiro e mostre na tela o seu sucessor e seu antecessor.</p>
+    <input type="number" name="numero" id="txtnumero">
+    <input type="button" value="Click" onclick="clicar()">
+    <div id="res">Resultado</div>
+    <script>
+        function clicar() {
+            let n = window.document.getElementById('txtnumero')
+            let p = Number(n.value)
+            let antecessor = p-1
+            let sucessor = p++
+            res.innerHTML=`O valor escolhido é <strong>${p}</strong>, seu antecessor ${antecessor} e o seu sucessor ${sucessor}.`
+        }
+    </script>
+</body>
+</html>

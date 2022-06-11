@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        input{
+            font: normal 18pt Arial;
+            margin-top: 20px;
+        }
+        div#resp{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício Python 7</h1>
+    <p>Desenvolva um programa que leia as duas notas de um aluno, calcule e mostre a sua média.</p>
+    <p>Nota 1:</p><input type="number" name="nota1" id="txtn1">
+    <p>Nota 2:</p><input type="number" name="nota2" id="txtn2">
+    
+    <p></p><input type="button" value="Média" onclick="media()">
+    <div id="resp">Resultado</div>
+    <script>
+        function media(){
+            let n1 = window.document.getElementById('txtn1')
+            let n2 = window.document.getElementById('txtn2')
+            let n11=Number.parseFloat(n1.value)
+            let n22=Number.parseFloat(n2.value)
+            let media = (n11+n22)/2
+            resp.innerHTML= `As notas são ${n11} e ${n22}. Sua média é ${media}. `
+        }
+
+    </script>
+</body>
+</html>

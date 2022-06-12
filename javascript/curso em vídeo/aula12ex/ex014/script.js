@@ -1,3 +1,6 @@
+function oi(){
+    oi.innerHTML = 'oi'
+}
 function carregar() {
     let msg = window.document.getElementById('msg')
     let paisagem = window.document.getElementById('imagem')

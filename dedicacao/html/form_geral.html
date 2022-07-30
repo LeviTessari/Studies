@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cadastro</title>
+</head>
+<body>
+    <h2>Cadastro</h2>
+<form action="">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome"
+            required placeholder="Nome completo">
+        </div>
+         <br>   
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Email@email.com" required> - <label for="pass">Password:</label>
+        <input type="password" name="" id="pass" placeholder="Senha">
+    </div>
+    <br>
+    <div>        
+        <label for="data">Data de nascimento:</label>
+        <input type="date" name="data" id="data"> - 
+        
+        <label for="foto">Foto</label>
+        <input type="file" name="foto" id="foto"><br>
+    </div>
+    <br>
+<div>    
+        <label for="nacionalidade">Nacionalidade:</label>
+        <select name="nacionalidade" id="nacionalidade">
+            <option value="russo">Russo</option>
+            <option value="americano">Americano</option>
+            <option value="brasileiro">Brasileiro</option>
+        </select> - Gênero:
+        <label for="female">F</label>
+        <input type="radio" name="genero" id="female"> <label for="male">M</label><input type="radio" name="genero" id="male">
+</div>
+    <div>
+        <br>
+        Suas principais qualidades <br>
+        <label for="int">Inteligência</label>
+        <input type="checkbox" name="inteligencia" id="int"> | 
+        <label for="res">Resiliência</label> 
+        <input type="checkbox" name="resiliencia" id="res"> | 
+        <label for="prep">Preparo físico </label>
+        <input type="checkbox" name="preparofisico" id="prep"> | 
+        <label for="edu">Educação</label> 
+        <input type="checkbox" name="qualidades" id="edu"> |
+    </div><br><br>
+    <textarea name="descrip" id="descrip" cols="30" rows="10" placeholder="Porque você gosta de se cadastrar?"></textarea><br>
+    <div>
+        <input type="submit" value="Criar">
+    </div>
+</form>
+</body>
+</html>

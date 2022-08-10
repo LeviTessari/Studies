@@ -1,0 +1,22 @@
+li{
+    color: #3f54a2;
+}
+h1{
+    color: #dd2121;
+    font-size: 70px;
+    background-color: grey;
+    border-color: yellow;
+    border-width: 8px;
+    border-style: dashed;
+    border: 3px dashed green;
+        
+}
+body{
+    background-image: urel(#);
+    background-repeat: no-repeat;
+    background-color: grey;
+    
+}
+
+
+

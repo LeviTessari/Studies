@@ -1,0 +1,23 @@
+h1{
+    font-family: "Montserrat", sans-serif;
+}
+
+.post{
+    background-color: #fffafa;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+
+    
+}
+h3{
+    color: #008080;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+p{
+    font-family: "Open Sans", "Arial", sans-serif;
+}
+h3, h1, p {
+    padding-left: 50px;
+    padding-right: 50px;
+}

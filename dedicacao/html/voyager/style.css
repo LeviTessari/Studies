@@ -1,3 +1,10 @@
-li a{
+li >  a{
     color: rgb(0, 255, 136);
+}
+
+h1+h4 {
+    border: 4px dashed;
+}
+a[href='/recibo']{
+    color: orange;;
 }

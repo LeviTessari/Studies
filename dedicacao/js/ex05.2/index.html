@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const initial = parseFloat(prompt("Quantidade inicial de dinheiro dispoível"))
+        let valueCurrent = initial
+        let stop = 0
+        do{
+        let opt = prompt("Você possui: "+valueCurrent+".\nDeseja adicionar, remover ou sair?")
+        switch(opt){
+            case "adicionar":
+                let add = parseFloat(prompt("Qual a quantidade que deseja adicionar"))
+                valueCurrent += add
+                break
+            case "remover":
+                let remove = parseFloat(prompt("Qual a quantidade que deseja remover"))
+                valueCurrent -= remove
+                break
+            case "sair":
+                stop = 1
+                alert("Programa está sendo finalizado")
+        }
+        
+        }while( stop === 0)
+        </script>
+</body>
+</html>

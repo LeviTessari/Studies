@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let value = parseFloat(prompt("Digite o valor em metros"))
+        const unidade = prompt("Digite unidade")
+
+
+
+        switch(unidade){
+            case "mm":
+                alert(`O valor de ${value} m, convertendo é: ${value*1000} mm`)
+                break
+            case "cm":
+                alert(`O valor de ${value} m, convertendo é: ${value*100} cm`)
+                break
+            case "dm":
+                alert(`O valor de ${value} m, convertendo é: ${value/10} dm`)
+                break
+            case "km":
+                alert(`O valor de ${value} m, convertendo é: ${value/1000} km`)
+                break
+            case "hm":
+                alert(`O valor de ${value} m, convertendo é: ${value/100} hm`)
+                break
+           default:
+                alert("Opção inválida")
+                break
+        }
+    </script>
+</body>
+</html>

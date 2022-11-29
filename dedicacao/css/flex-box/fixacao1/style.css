@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+ul{
+    display: flex;
+    gap: 0px 5px;
+    list-style: none;
+}
+.item{
+    color: white;
+    text-decoration: none;
+    width: 20vw;    
+    
+}
+.btn{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+}
